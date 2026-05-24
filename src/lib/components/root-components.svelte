@@ -660,21 +660,6 @@
             </div>
           </InputGroup.Addon>
           <InputGroup.Addon align="block-end" class="gap-1">
-            <Tooltip.Root>
-              <Tooltip.Trigger>
-                {#snippet child({ props })}
-                  <InputGroup.Button
-                    {...props}
-                    size="icon-sm"
-                    class="rounded-none"
-                    aria-label="Attach file"
-                  >
-                    <PaperclipIcon />
-                  </InputGroup.Button>
-                {/snippet}
-              </Tooltip.Trigger>
-              <Tooltip.Content>Attach file</Tooltip.Content>
-            </Tooltip.Root>
             <DropdownMenu.Root bind:open={modelPopoverOpen}>
               <Tooltip.Root>
                 <Tooltip.Trigger>
@@ -811,11 +796,6 @@
 
     <!-- ButtonGroupDemo (email toolbar) -->
     <ButtonGroup.Root>
-      <ButtonGroup.Root class="hidden sm:flex">
-        <Button variant="outline" size="icon-sm" aria-label="Go Back">
-          <ArrowLeft />
-        </Button>
-      </ButtonGroup.Root>
       <ButtonGroup.Root>
         <Button size="sm" variant="outline">Archive</Button>
         <Button size="sm" variant="outline">Report</Button>
@@ -879,7 +859,6 @@
         <ButtonGroup.Root>
           <Button variant="outline" size="sm">1</Button>
           <Button variant="outline" size="sm">2</Button>
-          <Button variant="outline" size="sm">3</Button>
         </ButtonGroup.Root>
         <ButtonGroup.Root>
           <Button variant="outline" size="icon-sm" aria-label="Previous">
