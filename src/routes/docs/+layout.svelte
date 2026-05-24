@@ -26,7 +26,7 @@
               {#each group.links as link}
                 <Sidebar.MenuItem>
                   <Sidebar.MenuButton
-                    class="h-7.5 w-fit text-[0.8rem] font-medium data-[active=true]:bg-accent"
+                    class="h-7.5 w-fit text-[0.8rem] font-medium data-[active=true]:bg-accent data-[active=true]:text-accent-foreground"
                     isActive={page.url.pathname === link.href}
                   >
                     {#snippet child({ props })}

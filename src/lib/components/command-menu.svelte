@@ -70,7 +70,7 @@
               }}
             >
               <div
-                class="aspect-square size-4 rounded-full border border-dashed border-muted-foreground"
+                class="aspect-square size-4 rounded-none border border-dashed border-muted-foreground"
               ></div>
               {link.title}
             </Command.Item>

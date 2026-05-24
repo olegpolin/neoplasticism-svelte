@@ -5,7 +5,7 @@
   import { Progress } from "$lib/registry/ui/progress/index.js";
 </script>
 
-<div class="flex w-full max-w-md flex-col gap-4 [--radius:1rem]">
+<div class="flex w-full max-w-md flex-col gap-4 [--radius:0rem]">
   <Item.Root variant="outline">
     <Item.Media variant="icon">
       <Spinner />

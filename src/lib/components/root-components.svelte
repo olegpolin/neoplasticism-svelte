@@ -300,7 +300,7 @@
     </div>
 
     <!-- ButtonGroupInputGroupDemo -->
-    <ButtonGroup.Root class="[--radius:9999rem]">
+    <ButtonGroup.Root class="[--radius:0rem]">
       <ButtonGroup.Root>
         <Button variant="outline" size="icon" aria-label="Add">
           <PlusIcon />
@@ -374,7 +374,7 @@
           <Tooltip.Root>
             <Tooltip.Trigger>
               {#snippet child({ props })}
-                <InputGroup.Button {...props} class="rounded-full" size="icon-xs" aria-label="Info">
+                <InputGroup.Button {...props} class="rounded-none" size="icon-xs" aria-label="Info">
                   <InfoIcon />
                 </InputGroup.Button>
               {/snippet}
@@ -386,7 +386,7 @@
       <InputGroup.Root>
         <InputGroup.Textarea placeholder="Ask, Search or Chat..." />
         <InputGroup.Addon align="block-end">
-          <InputGroup.Button variant="outline" class="rounded-full" size="icon-xs" aria-label="Add attachment">
+          <InputGroup.Button variant="outline" class="rounded-none" size="icon-xs" aria-label="Add attachment">
             <IconPlus />
           </InputGroup.Button>
           <DropdownMenu.Root>
@@ -395,7 +395,7 @@
                 <InputGroup.Button {...props} variant="ghost">Auto</InputGroup.Button>
               {/snippet}
             </DropdownMenu.Trigger>
-            <DropdownMenu.Content side="top" align="start" class="[--radius:0.95rem]">
+            <DropdownMenu.Content side="top" align="start" class="[--radius:0rem]">
               <DropdownMenu.Item>Auto</DropdownMenu.Item>
               <DropdownMenu.Item>Agent</DropdownMenu.Item>
               <DropdownMenu.Item>Manual</DropdownMenu.Item>
@@ -403,7 +403,7 @@
           </DropdownMenu.Root>
           <InputGroup.Text class="ms-auto">52% used</InputGroup.Text>
           <Separator orientation="vertical" class="!h-4" />
-          <InputGroup.Button variant="default" class="rounded-full" size="icon-xs">
+          <InputGroup.Button variant="default" class="rounded-none" size="icon-xs">
             <ArrowUpIcon />
             <span class="sr-only">Send</span>
           </InputGroup.Button>
@@ -412,7 +412,7 @@
       <InputGroup.Root>
         <InputGroup.Input placeholder="@shadcn" />
         <InputGroup.Addon align="inline-end">
-          <div class="bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-full">
+          <div class="bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-none">
             <IconCheck class="size-3" />
           </div>
         </InputGroup.Addon>
@@ -425,7 +425,7 @@
     <!-- InputGroupButtonDemo -->
     <div class="grid w-full max-w-sm gap-6">
       <Label for="input-secure" class="sr-only">Input Secure</Label>
-      <InputGroup.Root class="[--radius:9999px]">
+      <InputGroup.Root class="[--radius:0rem]">
         <InputGroup.Input id="input-secure" class="!ps-0.5" />
         <Popover.Root>
           <Popover.Trigger>
@@ -584,7 +584,7 @@
     class="order-first flex flex-col gap-6 lg:hidden xl:order-last xl:flex *:[div]:w-full *:[div]:max-w-full"
   >
     <!-- NotionPromptForm -->
-    <form class="[--radius:1.2rem]">
+    <form class="[--radius:0rem]">
       <Field.Group>
         <Field.Label for="notion-prompt" class="sr-only">Prompt</Field.Label>
         <InputGroup.Root>
@@ -600,7 +600,7 @@
                           {...props}
                           variant="outline"
                           size={!hasMentions ? "sm" : "icon-sm"}
-                          class="rounded-full transition-transform"
+                          class="rounded-none transition-transform"
                           aria-label={hasMentions ? "Add context" : undefined}
                         >
                           <AtIcon />
@@ -614,7 +614,7 @@
                 </Tooltip.Trigger>
                 <Tooltip.Content>Mention a person, page, or date</Tooltip.Content>
               </Tooltip.Root>
-              <Popover.Content class="p-0 [--radius:1.2rem]" align="start">
+              <Popover.Content class="p-0 [--radius:0rem]" align="start">
                 <Command.Root>
                   <Command.Input placeholder="Search pages..." />
                   <Command.List>
@@ -646,7 +646,7 @@
                   <InputGroup.Button
                     size="sm"
                     variant="secondary"
-                    class="rounded-full !ps-2"
+                    class="rounded-none !ps-2"
                     onclick={() => {
                       mentions = mentions.filter((m) => m !== mention);
                     }}
@@ -666,7 +666,7 @@
                   <InputGroup.Button
                     {...props}
                     size="icon-sm"
-                    class="rounded-full"
+                    class="rounded-none"
                     aria-label="Attach file"
                   >
                     <PaperclipIcon />
@@ -681,7 +681,7 @@
                   {#snippet child({ props })}
                     <DropdownMenu.Trigger {...props}>
                       {#snippet child({ props })}
-                        <InputGroup.Button {...props} size="sm" class="rounded-full">
+                        <InputGroup.Button {...props} size="sm" class="rounded-none">
                           {selectedModel.name}
                         </InputGroup.Button>
                       {/snippet}
@@ -690,7 +690,7 @@
                 </Tooltip.Trigger>
                 <Tooltip.Content>Select AI model</Tooltip.Content>
               </Tooltip.Root>
-              <DropdownMenu.Content side="top" align="start" class="[--radius:1rem]">
+              <DropdownMenu.Content side="top" align="start" class="[--radius:0rem]">
                 <DropdownMenu.Group class="w-42">
                   <DropdownMenu.Label class="text-muted-foreground text-xs">
                     Select Agent Mode
@@ -720,12 +720,12 @@
             <DropdownMenu.Root bind:open={scopeMenuOpen}>
               <DropdownMenu.Trigger>
                 {#snippet child({ props })}
-                  <InputGroup.Button {...props} size="sm" class="rounded-full">
+                  <InputGroup.Button {...props} size="sm" class="rounded-none">
                     <GlobeIcon /> All Sources
                   </InputGroup.Button>
                 {/snippet}
               </DropdownMenu.Trigger>
-              <DropdownMenu.Content side="top" align="end" class="[--radius:1rem]">
+              <DropdownMenu.Content side="top" align="end" class="[--radius:0rem]">
                 <DropdownMenu.Group>
                   <DropdownMenu.Item onSelect={(e) => e.preventDefault()}>
                     {#snippet child({ props })}
@@ -757,7 +757,7 @@
                       </Avatar.Root>
                       shadcn
                     </DropdownMenu.SubTrigger>
-                    <DropdownMenu.SubContent class="w-72 p-0 [--radius:1rem]">
+                    <DropdownMenu.SubContent class="w-72 p-0 [--radius:0rem]">
                       <Command.Root>
                         <Command.Input placeholder="Find or use knowledge in..." autofocus />
                         <Command.List>
@@ -798,7 +798,7 @@
             </DropdownMenu.Root>
             <InputGroup.Button
               aria-label="Send"
-              class="ms-auto rounded-full"
+              class="ms-auto rounded-none"
               variant="default"
               size="icon-sm"
             >
@@ -933,7 +933,7 @@
               <Field.Description class="line-clamp-1">
                 Select the option that best describes how you heard about us.
               </Field.Description>
-              <Field.Group class="flex flex-row flex-wrap gap-2 [--radius:9999rem]">
+              <Field.Group class="flex flex-row flex-wrap gap-2 [--radius:0rem]">
                 {#each hearOptions as option (option.value)}
                   <Field.Label for={option.value} class="!w-fit">
                     <Field.Field
@@ -944,7 +944,7 @@
                         value={option.value}
                         id={option.value}
                         checked={option.value === "social-media"}
-                        class="-ms-7 -translate-x-1 rounded-full transition-all duration-100 ease-linear data-[state=checked]:ms-0 data-[state=checked]:translate-x-0"
+                        class="-ms-7 -translate-x-1 rounded-none transition-all duration-100 ease-linear data-[state=checked]:ms-0 data-[state=checked]:translate-x-0"
                         aria-label={option.label}
                       />
                       <Field.Title class="text-nowrap">{option.label}</Field.Title>

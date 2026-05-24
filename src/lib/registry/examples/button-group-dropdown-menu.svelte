@@ -22,7 +22,7 @@
         </Button>
       {/snippet}
     </DropdownMenu.Trigger>
-    <DropdownMenu.Content align="end" class="[--radius:1rem]">
+    <DropdownMenu.Content align="end" class="[--radius:0rem]">
       <DropdownMenu.Group>
         <DropdownMenu.Item>
           <VolumeOff />

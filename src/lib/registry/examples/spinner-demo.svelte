@@ -3,7 +3,7 @@
   import * as Item from "$lib/registry/ui/item/index.js";
 </script>
 
-<div class="flex w-full max-w-xs flex-col gap-4 [--radius:1rem]">
+<div class="flex w-full max-w-xs flex-col gap-4 [--radius:0rem]">
   <Item.Root variant="muted">
     <Item.Media>
       <Spinner />

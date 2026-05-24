@@ -33,7 +33,7 @@
         </Button>
       {/snippet}
     </DropdownMenu.Trigger>
-    <DropdownMenu.Content class="w-72 [--radius:0.65rem]" align="end">
+    <DropdownMenu.Content class="w-72 [--radius:0rem]" align="end">
       {#each people as person (person.username)}
         <DropdownMenu.Item class="p-0">
           <Item.Root size="sm" class="w-full p-2">

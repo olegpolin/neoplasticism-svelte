@@ -9,7 +9,7 @@
   let voiceEnabled = $state(false);
 </script>
 
-<ButtonGroup.Root class="[--radius:9999rem]">
+<ButtonGroup.Root class="[--radius:0rem]">
   <ButtonGroup.Root>
     <Button variant="outline" size="icon">
       <Plus />

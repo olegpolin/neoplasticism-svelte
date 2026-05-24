@@ -15,11 +15,11 @@
       <BadgeCheckIcon />
       Verified
     </Badge>
-    <Badge class="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums">8</Badge>
-    <Badge class="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums" variant="destructive">
+    <Badge class="h-5 min-w-5 rounded-none px-1 font-mono tabular-nums">8</Badge>
+    <Badge class="h-5 min-w-5 rounded-none px-1 font-mono tabular-nums" variant="destructive">
       99
     </Badge>
-    <Badge class="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums" variant="outline">
+    <Badge class="h-5 min-w-5 rounded-none px-1 font-mono tabular-nums" variant="outline">
       20+
     </Badge>
   </div>

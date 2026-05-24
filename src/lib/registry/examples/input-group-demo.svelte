@@ -28,7 +28,7 @@
       <Tooltip.Root>
         <Tooltip.Trigger>
           {#snippet child({ props })}
-            <InputGroup.Button {...props} class="rounded-full" size="icon-xs">
+            <InputGroup.Button {...props} class="rounded-none" size="icon-xs">
               <IconInfoCircle />
             </InputGroup.Button>
           {/snippet}
@@ -40,7 +40,7 @@
   <InputGroup.Root>
     <InputGroup.Textarea placeholder="Ask, Search or Chat..." />
     <InputGroup.Addon align="block-end">
-      <InputGroup.Button variant="outline" class="rounded-full" size="icon-xs">
+      <InputGroup.Button variant="outline" class="rounded-none" size="icon-xs">
         <IconPlus />
       </InputGroup.Button>
       <DropdownMenu.Root>
@@ -49,7 +49,7 @@
             <InputGroup.Button {...props} variant="ghost">Auto</InputGroup.Button>
           {/snippet}
         </DropdownMenu.Trigger>
-        <DropdownMenu.Content side="top" align="start" class="[--radius:0.95rem]">
+        <DropdownMenu.Content side="top" align="start" class="[--radius:0rem]">
           <DropdownMenu.Item>Auto</DropdownMenu.Item>
           <DropdownMenu.Item>Agent</DropdownMenu.Item>
           <DropdownMenu.Item>Manual</DropdownMenu.Item>
@@ -57,7 +57,7 @@
       </DropdownMenu.Root>
       <InputGroup.Text class="ms-auto">52% used</InputGroup.Text>
       <Separator orientation="vertical" class="!h-4" />
-      <InputGroup.Button variant="default" class="rounded-full" size="icon-xs" disabled>
+      <InputGroup.Button variant="default" class="rounded-none" size="icon-xs" disabled>
         <ArrowUpIcon />
         <span class="sr-only">Send</span>
       </InputGroup.Button>
@@ -67,7 +67,7 @@
     <InputGroup.Input placeholder="@shadcn" />
     <InputGroup.Addon align="inline-end">
       <div
-        class="bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-full"
+        class="bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-none"
       >
         <IconCheck class="size-3" />
       </div>

@@ -30,7 +30,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span class="size-2 rounded-full bg-[#ff3e00]"></span>
+      <span class="size-2 rounded-none bg-[#ff3e00]"></span>
       Based on shadcn-svelte
       <ArrowRightIcon />
     </a>

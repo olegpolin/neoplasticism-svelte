@@ -38,7 +38,7 @@
           <Item.Description>{person.email}</Item.Description>
         </Item.Content>
         <Item.Actions>
-          <Button variant="ghost" size="icon" class="rounded-full">
+          <Button variant="ghost" size="icon" class="rounded-none">
             <Plus />
           </Button>
         </Item.Actions>
