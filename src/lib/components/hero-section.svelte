@@ -25,7 +25,7 @@
     class="3xl:max-w-screen-2xl mx-auto flex max-w-350 flex-col items-center gap-2 px-4 py-8 text-center md:py-16 lg:px-8 lg:py-20 xl:gap-4"
   >
     <a
-      class={badgeVariants({ variant: 'secondary', class: 'bg-transparent' })}
+      class={badgeVariants({ variant: 'outline', class: 'bg-transparent' })}
       href="https://www.shadcn-svelte.com"
       target="_blank"
       rel="noopener noreferrer"
