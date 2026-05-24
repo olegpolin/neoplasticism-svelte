@@ -175,7 +175,7 @@
 >
   <!-- Column 1: FieldDemo (payment form) -->
   <div class="flex flex-col gap-6 *:[div]:w-full *:[div]:max-w-full">
-    <div class="border-border rounded-lg border p-6">
+    <div class="rounded-none border-2 p-6">
       <div class="w-full max-w-md">
         <form>
           <Field.Group>
@@ -263,7 +263,7 @@
   <!-- Column 2: EmptyAvatarGroupDemo, SpinnerBadgeDemo, ButtonGroupInputGroupDemo, FieldSliderDemo, InputGroupDemo -->
   <div class="flex flex-col gap-6 *:[div]:w-full *:[div]:max-w-full">
     <!-- EmptyAvatarGroupDemo -->
-    <Empty.Root class="flex-none border">
+    <Empty.Root class="flex-none">
       <Empty.Header>
         <Empty.Media>
           <Avatar.Group class="grayscale">
@@ -959,7 +959,7 @@
     </Card>
 
     <!-- SpinnerEmptyDemo -->
-    <Empty.Root class="w-full border md:p-6">
+    <Empty.Root class="w-full md:p-6">
       <Empty.Header>
         <Empty.Media variant="icon">
           <Spinner />
