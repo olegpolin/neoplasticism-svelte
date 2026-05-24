@@ -14,6 +14,9 @@
 	theme={mode.current}
 	class="toaster group"
 	style="--normal-bg: var(--color-popover); --normal-text: var(--color-popover-foreground); --normal-border: var(--color-border);"
+	toastOptions={{
+		class: 'border-2! border-border! rounded-none!'
+	}}
 	{...restProps}
 >
 	{#snippet loadingIcon()}
